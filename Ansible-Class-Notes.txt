@@ -1,0 +1,2 @@
+ansible -i 172.31.26.196, all -e ansible_user=ec2-user -e ansible_password=DevOps321 -b -m dnf -a "name=nginx state=installed"
+
