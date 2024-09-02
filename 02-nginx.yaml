@@ -1,5 +1,6 @@
 - name: This is for nginx installation
   hosts: dev
+  become: yes
   tasks:
   - name: install nginx package
     ansible.builtin.package:
