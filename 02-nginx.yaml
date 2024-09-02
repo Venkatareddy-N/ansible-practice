@@ -2,11 +2,11 @@
   hosts: dev
   become: yes
   tasks:
-  - name: install nginx package
+  - name: Install nginx package
     ansible.builtin.package:
       name: nginx
       state: present
-  - name: start nginx service
+  - name: start and enable nginx service
     ansible.builtin.service:
       name: nginx
       state: started
