@@ -1,0 +1,5 @@
+- name: checking the server connection usnig ping
+  hosts: 172.31.86.234
+  - tasks: 
+    name: Ping the target server
+    ansible.builtin.ping:
