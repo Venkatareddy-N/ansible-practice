@@ -7,10 +7,3 @@
   - name: print variables
     ansible.builtin.debug:
       msg: Hello {{NAME}} welcome to {{COURSE}} Course
-        msg: "Hello {{NAME}} welcome to {{COURSE}}"
-
-  # - name: print the information again
-  #   vars: #task level variables override play level
-  #     COURSE: "Ansible"
-  #   ansible.builtin.debug:
-  #     msg: "Hello {{NAME}} welcome to {{COURSE}}""
