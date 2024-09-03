@@ -1,0 +1,14 @@
+- name: Task with Variables
+  hosts: dev
+  vars:
+    NAME: "Venkat"
+    COURSE: "DevOps with AWS"
+  tasks:
+    - name: Print Variables
+      ansible.builtin.debug:
+        msg: "Hello {{NAME}} welcome to {{COURSE}}"
+    - name: print the information again
+      vars: #task level variables override play level
+        COURSE: "Ansible"
+      ansible.builtin.debug:
+        msg: "Hello {{NAME}} welcome to {{COURSE}}""
