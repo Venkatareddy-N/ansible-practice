@@ -1,0 +1,9 @@
+- name: Variables Testing
+  hosts: dev
+  vars:
+    NAME: VENKAT
+    COURSE: DEVOPS
+  tasks:
+  - name: print variables
+    ansible.plugin.debug:
+     msg: Hello {{VENKAT}} welcome to {{COURSE}} Course
