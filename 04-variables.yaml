@@ -5,5 +5,5 @@
     COURSE: DEVOPS
   tasks:
   - name: print variables
-    ansible.plugin.debug:
-     msg: Hello {{VENKAT}} welcome to {{COURSE}} Course
+    ansible.builtin.debug:
+      msg: Hello {{VENKAT}} welcome to {{COURSE}} Course
