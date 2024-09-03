@@ -1,5 +1,6 @@
 - name: Multi Play
   hosts: dev
   task:
-   ansible.builtin.debug:
+    - name: play1 task 1
+      ansible.builtin.debug:
     
